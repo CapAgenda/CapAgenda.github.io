@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import Video from '../../video/video.mp4';
+import React, {useState, useRef, useEffect} from 'react';
+import Video from '../../video/video7.mp4';
 import { Button } from '../ButtonElement';
 import { 
     HeroContainer,
@@ -21,15 +21,23 @@ const onHover = () => {
     setHover(!hover)
 }
 
+/* Control video speed */ 
+const videoRef = useRef(null);
+  
+useEffect(() => {
+      videoRef.current.playbackRate = 0.33;
+    }, []); 
+/* --- */
+
   return (
     <HeroContainer>
         <HeroBg>
-            <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+            <VideoBg ref={videoRef} autoPlay loop muted src={Video} type='video/mp4'/>
         </HeroBg>
         <HeroContent>
-            <HeroH1>Front-end Design and Development</HeroH1>
+            <HeroH1>Full-Stack Developer</HeroH1>
             <HeroP>
-                Contact me for graphic and web design services.
+            Front-end ( e.g. React.js),<br/> Back-end (databases, cloud-native development like Amazon AWS)
             </HeroP>
             <HeroBtnWrapper>
                 <Button 
@@ -37,8 +45,8 @@ const onHover = () => {
                 onMouseEnter={onHover}
                 onMouseLeave={onHover}
                 primary="true"
-                dark="true">
-                    View my work {hover ? <ArrowForward /> : <ArrowRight/>}
+                dark='false'>
+                    Portfolio {hover ? <ArrowForward /> : <ArrowRight/>}
                 </Button>
             </HeroBtnWrapper>
         </HeroContent>
