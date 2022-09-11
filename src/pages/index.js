@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import SiteSection from '../components/SiteSection'
 import { homeObjOne, homeObjTwo } from '../components/SiteSection/Data'
 import Sidebar from '../components/Sidebar'
+import Footer from '../components/Footer'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,6 +22,7 @@ const Home = () => {
     
     <Highlights />
     <SiteSection {...homeObjTwo}/>
+    <Footer />
   
     </>
   )

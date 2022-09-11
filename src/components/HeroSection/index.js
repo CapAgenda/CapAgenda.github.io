@@ -1,5 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import Video from '../../video/video7.mp4';
+import { animateScroll as scroll } from 'react-scroll';
 import { Button } from '../ButtonElement';
 import { 
     HeroContainer,
@@ -45,8 +46,13 @@ useEffect(() => {
                 onMouseEnter={onHover}
                 onMouseLeave={onHover}
                 primary="true"
-                dark='false'>
-                    Portfolio {hover ? <ArrowForward /> : <ArrowRight/>}
+                dark='false'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+                >Portfolio {hover ? <ArrowForward /> : <ArrowRight/>}
                 </Button>
             </HeroBtnWrapper>
         </HeroContent>

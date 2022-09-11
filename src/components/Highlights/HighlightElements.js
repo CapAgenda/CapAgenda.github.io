@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
 export const HighlightsContainer = styled.div`
-    height: 800px;
+    min-height: 800px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #00072d;
+    padding-bottom: 24px;
 
     @media screen and (max-width: 768px) {
-        height: 1100px;
+        min-height: 1100px;
+        height: 100%;
     }
 
     @media screen and (max-width: 480px) {
-        height: 1300px;
+        min-height: 1300px;
+        height: 100%;
     }
 `
 
@@ -27,7 +31,7 @@ export const HighlightsWrapper = styled.div`
     padding: 0 50px;
 
     @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:  1fr;
     }
 
     @media screen and (max-width: 768px) {
@@ -58,9 +62,11 @@ export const HighlightsH1 = styled.h1`
     font-size: 2.5rem;
     color: #E3F2FD;
     margin-bottom: 64px;
+    padding: 39px;
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;
+        margin-bottom: 34px;
     }
 `
 
