@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SiteContainer = styled.div`
     color: #fff;
-    background: ${({lightBg}) => (lightBg ? '#E3F2FD' : '#00072d')};
+    background: ${({lightBg}) => (lightBg ? '#313431' : '#00072d')};
 
     @media screen and (max-width: 768px){
         padding: 100px 0;
@@ -11,7 +11,7 @@ export const SiteContainer = styled.div`
 export const SiteWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px; 
+    min-height: 860px; 
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -27,7 +27,7 @@ export const SiteRow = styled.div`
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px) {
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1 col2'` : `'col1 col1' 'col2 col2'`)};
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col2' 'col1 col1'` : `'col1 col1' 'col2 col2'`)};
     }
 `
 export const Column1 = styled.div`
@@ -49,8 +49,8 @@ export const TextWrapper = styled.div `
 `
 
 export const TopLine = styled.p `
-    color: #2196F3;
-    font-size: 16px;
+    color: #fbec10;
+    font-size: 24px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -62,19 +62,25 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({lightText}) => (lightText ? '#E3F2FD' : '#00072d')};
+    color: ${({lightText}) => (lightText ? '#E3F2FD' : '#f4de66')};
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
+        
     }
 `
 
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#00072d' : '#E3F2FD')};
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+    color: ${({darkText}) => (darkText ? '#fff' : '#E3F2FD')};
+
+    @media screen and (max-width: 480px) {
+        font-size: 16px;
+    }
 `
 
 export const BtnWrap = styled.div `
@@ -89,6 +95,7 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
+    border-radius: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
 `

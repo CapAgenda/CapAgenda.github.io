@@ -4,11 +4,6 @@ import { animateScroll as scroll } from 'react-scroll';
 import {
     FooterContainer,
     FooterWrap,
-    FooterLinksContainer,
-    FooterLinksWrapper,
-    FooterLinkItems,
-    FooterLinkTitle,
-    FooterLink,
     SocialMedia,
     SocialMediaWrap,
     SocialLogo,
@@ -26,39 +21,7 @@ const Footer = () => {
   return (
     <FooterContainer>
         <FooterWrap>
-            <FooterLinksContainer>
-                <FooterLinksWrapper>
-                        <FooterLinkItems>
-                        <FooterLinkTitle>MP</FooterLinkTitle>
-                                <FooterLink to="/contact">Contact</FooterLink>
-                                
-                                
-                                <FooterLink to="/home">Home</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                        <FooterLinkTitle>Projects</FooterLinkTitle>
-                                <FooterLink to="/contact">Project1</FooterLink>
-                                <FooterLink to="/about">Project2</FooterLink>
-                                <FooterLink to="/work">Project3</FooterLink>
-                               
-                        </FooterLinkItems>
-                </FooterLinksWrapper>
-                <FooterLinksWrapper>
-                        <FooterLinkItems>
-                        <FooterLinkTitle>About</FooterLinkTitle>
-                                
-                                <FooterLink to="/work">Portfolio</FooterLink>
-                                <FooterLink to="/resume">Resume / CV</FooterLink>
-                                
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                        <FooterLinkTitle>Social Media</FooterLinkTitle>
-                                {<FooterLink to="/contact">LinkedIn</FooterLink>}
-                                {<FooterLink to="/contact">GitHub</FooterLink>}
-                                
-                        </FooterLinkItems>
-                </FooterLinksWrapper>
-             </FooterLinksContainer>
+      
              <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>

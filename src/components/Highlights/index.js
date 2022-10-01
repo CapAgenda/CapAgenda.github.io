@@ -1,6 +1,5 @@
-import React from 'react';
+import React from 'react'
 import HighlightCard from './HighlightCard';
-import { projectOne, projectTwo, projectThree } from './HighlightData'
 
 import {
     HighlightsH1,
@@ -9,16 +8,16 @@ import {
 } from './HighlightElements'
 
 const Highlights = () => {
+  
   return (
    <>
    <HighlightsContainer id="work">
-        <HighlightsH1>Project Development Process</HighlightsH1>
+        <HighlightsH1>Portfolio Projects</HighlightsH1>
         <HighlightsWrapper >
-            <HighlightCard {...projectOne} />
-            <HighlightCard {...projectTwo} />
-            <HighlightCard {...projectThree} /> 
+            <HighlightCard /> 
         </HighlightsWrapper>
    </HighlightsContainer>
+
    </>
   )
 }

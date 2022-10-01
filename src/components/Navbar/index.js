@@ -35,7 +35,7 @@ const toggleHome = () => {
 
   return (
     <>
-    <IconContext.Provider value={{color: '#E3F2FD'}}>
+    <IconContext.Provider value={{color: '#fbec10'}}>
         <Nav scrollNav ={scrollNav}>
             <NavbarContainer>
                 <NavLogo to="/" onClick={toggleHome}>MP</NavLogo>

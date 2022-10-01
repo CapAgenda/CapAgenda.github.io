@@ -3,8 +3,9 @@ import HeroSection from '../components/HeroSection'
 import Highlights from '../components/Highlights'
 import Navbar from '../components/Navbar'
 import SiteSection from '../components/SiteSection'
-import { homeObjOne, homeObjTwo } from '../components/SiteSection/Data'
+import { homeObjTwo } from '../components/SiteSection/Data'
 import Sidebar from '../components/Sidebar'
+import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 const Home = () => {
@@ -21,7 +22,9 @@ const Home = () => {
     <HeroSection />
     
     <Highlights />
+    
     <SiteSection {...homeObjTwo}/>
+    <Contact />
     <Footer />
   
     </>

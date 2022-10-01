@@ -7,7 +7,7 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #0d47a1;
+    background: #fbec10;
     display: grid;
     align-items: center;
     top: 0;
@@ -18,7 +18,7 @@ export const SidebarContainer = styled.aside`
 `
 
 export const CloseIcon = styled(FaTimes)`
-    color: #e3f2fd;
+    color: #101010;
 `
 export const Icon = styled.div`
     position: absolute;
@@ -30,7 +30,7 @@ export const Icon = styled.div`
     outline: none; 
 `
 export const SidebarWrapper = styled.div`
-    color: #fff;
+    color: #101010;
 `
 export const SidebarMenu = styled.ul`
     display: grid;
@@ -50,11 +50,11 @@ export const SidebarLink = styled(LinkSc)`
     text-decoration: none;
     transition: 0.3s ease-in-out;
     text-decoration: none;
-    color: #fff;
+    color: #101010;
     cursor: pointer;
 
     &:hover {
-        color: #e3f2fd;
+        color: #313431;
         transition: 0.3s ease-in-out;
     }
 `

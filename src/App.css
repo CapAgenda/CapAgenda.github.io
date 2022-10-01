@@ -6,7 +6,24 @@
   font-family: 'Barlow', sans-serif;
 }
 
-:root {
-  --clr-accent-1: #e3f2fd;
-  --clr-accent-9: #0d47a1;
-}
+    /* width */
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #101010;
+      
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #fbec10;
+      
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }

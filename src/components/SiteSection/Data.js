@@ -22,13 +22,13 @@ export const homeObjTwo = {
     LightTextDesc: false,
     topLine: 'About Me',
     headline: 'Self-Taught Full-Stack Developer',
-    description: 'Providing value to others through web design and development. Experience with front-end & back-end / cloud-native development; I am humble, hungry and eager to continue learning and developing to contribute to your team / project.',
+    description: 'Providing value to others through web design and development. Experience with front-end & back-end / cloud-native development, graphic software and illustration with Adobe Illustrator / Photoshop; I am humble, hungry and eager to continue learning while contributing to your team / project.',
     buttonLabel: 'Resume / CV',
     imgStart: true,
-    img: require('../../images/bio-img1.svg').default,
+    img: require('../../images/gitAvatar3.png'),
     alt: 'Bio Picture',
-    dark: false,
-    primary: false,
+    dark: true,
+    primary: true,
     darkText: true,
 };
 

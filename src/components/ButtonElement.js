@@ -3,10 +3,10 @@ import {Link as LinkSc} from 'react-scroll';
 
 export const Button = styled(LinkSc)`
     border-radius: 50px;
-    background: ${({primary}) => (primary ? '#2196F3' : '#0D47A1')};
+    background: ${({primary}) => (primary ? '#fbec10' : '#0D47A1')};
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-    color: ${({dark}) => (dark ? '#0D47A1' : '#E3F2FD')};
+    color: ${({dark}) => (dark ? '#101010' : '#E3F2FD')};
     font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
     font-weight: bold;
     text-transform:uppercase;
@@ -20,6 +20,6 @@ export const Button = styled(LinkSc)`
 
     &:hover {
         transition: all 0.3s ease-in-out;
-        background: ${({primary}) => (primary ? '#BBDEFB' : '#1565C0')};
+        background: ${({primary}) => (primary ? '#f4eec1' : '#1565C0')};
     }
 `
