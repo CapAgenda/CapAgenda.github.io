@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e215e280.css",
+    "main.js": "/static/js/main.024fe9bb.js",
+    "static/media/sound-board.PNG": "/static/media/sound-board.48de9ffaf648f6efe9dc.PNG",
+    "static/media/video7.mp4": "/static/media/video7.35714edbe0a2136c23c5.mp4",
+    "static/media/wave-form.PNG": "/static/media/wave-form.5bed0e561e60a94299a8.PNG",
+    "static/media/frg-tactical-inv.PNG": "/static/media/frg-tactical-inv.92861c0d30cbee68196f.PNG",
+    "static/media/front-end-large.PNG": "/static/media/front-end-large.a96371167ecdba4c1caa.PNG",
+    "static/media/gitAvatar3.png": "/static/media/gitAvatar3.6f8c8ae84eddc850d330.png",
+    "static/media/front-end-ui.PNG": "/static/media/front-end-ui.ba3429d4bc01fcdecee9.PNG",
+    "static/media/cms-api.PNG": "/static/media/cms-api.d6090035d017ff392777.PNG",
+    "index.html": "/index.html",
+    "main.e215e280.css.map": "/static/css/main.e215e280.css.map",
+    "main.024fe9bb.js.map": "/static/js/main.024fe9bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e215e280.css",
+    "static/js/main.024fe9bb.js"
+  ]
+}
