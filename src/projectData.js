@@ -45,6 +45,21 @@ const data = {
             liveproject: "https://capagenda.github.io/cscms-src/",
             githubrepo: "https://github.com/CapAgenda/cscms-src"
         },
+        {
+            id: 4,
+            topLine: 'AI Audio Transcription',
+            description: 'Jupyter Notebook using AI to create SRT transcripts',
+            buttonLabel: 'View Details',
+            img: require('./images/wave-form.PNG'),
+            alt: 'Audio Waveform',
+
+            title: "Whisper openAI bridge to SRT transcripts",
+            bigdesc: "Podcasters needed a way to create timestamped transcriptions easily for each episode. The open AI project Whisper provides the ability to create transcripts from an audio file. \n\nThe jupyter notebook accepts an uploaded audio file or a URL to an audio file online and outputs a transcript for the audio in SRT format. The notebook allows the user to select the model to use and is set up to run in a free Google Colab account using a virtual machine GPU.",
+            tech: "Jupyter Notebook / Whisper AI / Google Colab / GitHub / Python",
+            bigimg: require('./images/sound-board.PNG'),
+            liveproject: "https://github.com/CapAgenda/whispercast",
+            githubrepo: "https://github.com/CapAgenda/cscms-src"
+        },
     
     ],
 };

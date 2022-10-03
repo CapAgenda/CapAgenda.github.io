@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-
 import {
     ContactContainer,
     ContactWrap,
@@ -16,19 +15,19 @@ import {
     ContactBtn
 } from './ContactElements'
 
-const FORM_ENDPOINT = ""; // TODO - fill on the later step
 
 const Contact = () => {
 
+    const FORM_ENDPOINT = "https://public.herotofu.com/v1/b1211ce0-41a5-11ed-9b17-6fdf7f94f506"; 
     const [submitted, setSubmitted] = useState(false);
     const handleSubmit = () => {
-        setTimeout(() => {
+      setTimeout(() => {
         setSubmitted(true);
-        }, 100);
+      }, 100);
     };
-
+  
     if (submitted) {
-        return (
+      return (
         <>
         <ContactContainer id="contact">
         <ContactWrap>
@@ -41,8 +40,8 @@ const Contact = () => {
                 </ColumnL>
                 <ColumnR>
                 <TextWrapper>
-                <ContactTopLine>Thank you!</ContactTopLine>
-                <ContactP>I'll be in touch soon.</ContactP>
+                <ContactTopLine style={{textAlign: 'center'}}>Thank you!</ContactTopLine>
+                <ContactP style={{textAlign: 'center'}}>I'll be in touch soon.</ContactP>
             </TextWrapper>
             </ColumnR>
             </ContactRow>
@@ -51,8 +50,7 @@ const Contact = () => {
         </>
         );
     }
-
-
+    
     return (
     <ContactContainer id="contact">
         <ContactWrap>
@@ -67,13 +65,13 @@ const Contact = () => {
                   <ContactForm  action={FORM_ENDPOINT}
                                 onSubmit={handleSubmit}
                                 method="POST"
-                                target="_blank">
-                  <NameInput type="input" className="form-field" id="name" placeholder="Name"  required />
-                  <ContactInput type="email" id="email" placeholder="Email"  required></ContactInput>
+                                target="_blank"
+                                >
+                  <NameInput type="input" name="Name" className="form-field" id="name" placeholder="Name"  required />
+                  <ContactInput type="email" name="Email" id="email" placeholder="Email"  required></ContactInput>
                   <ContactTextarea type="text" id="msg" rows="5" placeholder="Message"  required></ContactTextarea>
-                  <ContactBtn type="submit" value="Send" className="send-btn"/>
+                  <ContactBtn type="submit" name="message" value="Send" className="send-btn"/>
                   </ContactForm>
-                    
                 </ColumnR>
             </ContactRow>
         </ContactWrap>

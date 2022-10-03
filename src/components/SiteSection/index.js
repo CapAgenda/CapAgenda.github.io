@@ -10,11 +10,12 @@ import {
   Column1,
   Column2,
   BtnWrap,
+  LinkButton,
   ImgWrap,
   Img,
   
 } from './SiteElements';
-import { Button } from '../ButtonElement';
+
 
 const SiteSection = ({lightBg, id, imgStart, topLine, lightText, headline, dark, darkText, description, buttonLabel, img, alt, primary, }) => {
   return (
@@ -28,11 +29,10 @@ const SiteSection = ({lightBg, id, imgStart, topLine, lightText, headline, dark,
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
               <BtnWrap>
-                <Button 
-                to="home"
-                primary={primary ? 1 : 0}
-                dark={dark ? 1 : 0}
-                >{buttonLabel}</Button>
+                <LinkButton 
+                href="https://www.linkedin.com/in/matthewspeterson/"
+                target="_blank" rel="noopener noreferrer"
+                >Resume / CV</LinkButton>
               </BtnWrap>
             </TextWrapper>
           </Column1>

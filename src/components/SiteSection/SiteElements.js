@@ -99,3 +99,28 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
 `
+
+export const LinkButton = styled.a`
+    background: #fbec10;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 32px;
+    border-radius: 50px;
+    margin: 16px 0;
+    color: #101010;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+        margin: 4px 0;
+    }
+
+    &:hover {
+        background: #f4de66;
+        transform: translateY(-2px);
+        box-shadow: 0 1px 3px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 24%);
+        transition: all 0.3s ease-in-out;
+    }
+`

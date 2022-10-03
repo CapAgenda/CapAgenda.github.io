@@ -38,7 +38,7 @@ useEffect(() => {
         <HeroContent>
             <HeroH1>Full-Stack Developer</HeroH1>
             <HeroP>
-            Front-end ( e.g. React.js),<br/> Back-end (databases, cloud-native development like Amazon AWS)
+            Front-end ( e.g. React.js),<br/> Back-end (databases, cloud-native development ie. Amazon AWS)
             </HeroP>
             <HeroBtnWrapper>
                 <Button 
