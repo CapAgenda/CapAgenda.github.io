@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import Video from '../../video/video7.mp4';
-import { animateScroll as scroll } from 'react-scroll';
+
 import { Button } from '../ButtonElement';
 import { 
     HeroContainer,
